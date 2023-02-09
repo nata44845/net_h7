@@ -50,10 +50,10 @@ int[] FindIndex(int[,] array, int num)
     {
         for (int j = 0; j < cols; j++)
         {
-            if (array[i,j] == num)
+            if (array[i, j] == num)
             {
-                result[0]=i;
-                result[1]=j;
+                result[0] = i;
+                result[1] = j;
                 return result;
             }
         }
@@ -70,7 +70,7 @@ int[,] array = GetArray(sizeM, sizeN, 0, 100);
 
 PrintArray2D(array);
 
-int[] arrayIndex = FindIndex(array,findNum);
+int[] arrayIndex = FindIndex(array, findNum);
 
 if (arrayIndex == null) Console.WriteLine($"{findNum} => Такого числа в массиве нет");
 else Console.WriteLine($"Индексы числа {findNum} => [{arrayIndex[0]},{arrayIndex[1]}]");
